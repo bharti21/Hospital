@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="372.0" prefWidth="553.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="hospital.AdmitPageController">
+   <children>
+      <ImageView fitHeight="381.0" fitWidth="553.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../hos.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="32.0" layoutY="36.0" text="Patient ID:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="98.0" text="Patient AdmitDate:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="159.0" text="Discharge Date:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="224.0" text="RoomNo:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="pid" layoutX="188.0" layoutY="34.0" onAction="#actionPerformed" />
+      <TextField fx:id="admitDate" layoutX="188.0" layoutY="95.0" onAction="#actionPerformed" />
+      <TextField fx:id="dischDate" layoutX="188.0" layoutY="156.0" onAction="#actionPerformed" />
+      <TextField fx:id="room_no" layoutX="188.0" layoutY="221.0" onAction="#actionPerformed" />
+      <Button fx:id="ok" layoutX="237.0" layoutY="295.0" mnemonicParsing="false" onAction="#actionPerformed" text="OK">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

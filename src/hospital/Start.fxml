@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="395.0" prefWidth="580.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hospital.StartController">
+   <children>
+      <ImageView fitHeight="389.0" fitWidth="594.0" layoutX="5.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../hos.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="36.0" layoutY="44.0" text="New Patient Entry:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="newvisit" layoutX="185.0" layoutY="39.0" mnemonicParsing="false" onAction="#actionPerformed1" prefHeight="29.0" prefWidth="71.0" text="Visit">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="newadmit" layoutX="292.0" layoutY="39.0" mnemonicParsing="false" onAction="#actionPerformed1" prefHeight="29.0" prefWidth="84.0" text="Admit">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Button>
+      <Label layoutX="32.0" layoutY="114.0" text="Patient Information:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="visitinfo" layoutX="185.0" layoutY="107.0" mnemonicParsing="false" onAction="#actionPerformed1" prefHeight="25.0" prefWidth="71.0" text="Visited">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="admitinfo" layoutX="292.0" layoutY="109.0" mnemonicParsing="false" onAction="#actionPerformed1" prefHeight="29.0" prefWidth="84.0" text="Admitted">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Button>
+      <Label layoutX="37.0" layoutY="191.0" prefHeight="19.0" prefWidth="114.0" text="Ward Information:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="generalinfo" layoutX="185.0" layoutY="188.0" mnemonicParsing="false" onAction="#actionPerformed1" prefHeight="25.0" prefWidth="71.0" text="General">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="specialinfo" layoutX="292.0" layoutY="188.0" mnemonicParsing="false" onAction="#actionPerformed1" prefHeight="25.0" prefWidth="84.0" text="Special">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="Logout" layoutX="231.0" layoutY="251.0" mnemonicParsing="false" onAction="#actionPerformed1" prefHeight="25.0" prefWidth="71.0" text="LogOut" textFill="#cd1212">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Label layoutX="231.0" layoutY="364.0" prefHeight="17.0" prefWidth="187.0" text="Sanjeevani Hospital">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

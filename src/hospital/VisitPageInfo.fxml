@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="462.0" prefWidth="373.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hospital.VisitPageInfoController">
+   <children>
+      <TableView fx:id="table" layoutY="78.0" onSort="#loadDataBaseData" prefHeight="383.0" prefWidth="670.0">
+        <columns>
+          <TableColumn fx:id="pid" prefWidth="48.0" text="PID" />
+          <TableColumn fx:id="pfnm" prefWidth="123.0" text="First Name" />
+            <TableColumn fx:id="plnm" prefWidth="145.0" text="Last Name" />
+            <TableColumn fx:id="pphone_no" prefWidth="127.0" text="Phone" />
+            <TableColumn fx:id="p_add" prefWidth="115.0" text="Address" />
+            <TableColumn fx:id="p_visitDate" minWidth="0.0" prefWidth="111.0" text="Visit Date" />
+        </columns>
+      </TableView>
+      <TextField fx:id="searchfield" layoutX="35.0" layoutY="29.0" prefHeight="25.0" prefWidth="255.0" />
+      <Button fx:id="search" layoutX="322.0" layoutY="29.0" mnemonicParsing="false" onAction="#search" prefHeight="25.0" prefWidth="71.0" text="Search">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="back" layoutX="507.0" layoutY="35.0" mnemonicParsing="false" onAction="#goBack" text="Back">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="show" layoutX="576.0" layoutY="35.0" mnemonicParsing="false" onAction="#loadDataBaseData" text="Show">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
